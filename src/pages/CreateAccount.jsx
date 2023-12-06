@@ -44,7 +44,7 @@ export const CreateAccount = () => {
     <main className="h-screen">
       <Navbar />
       <div className="pt-40">
-        <div className="max-w-md w-full mx-auto bg-[#F9F9F9] p-8 rounded-md shadow-xl">
+        <div className="max-w-md w-[80%] md:w-full mx-auto bg-[#F9F9F9] p-8 rounded-md shadow-xl">
           {errorMessage && (
             <small className="text-red-400 font-semibold flex justify-center text-base">{errorMessage}</small>
           )}

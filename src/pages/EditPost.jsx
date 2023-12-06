@@ -21,7 +21,7 @@ export const EditPost = () => {
                 setContent(postInfo.content)
             })
         })
-  }, [])
+  }, [id])
 
   const handleUpdatePost = async (e) => {
     e.preventDefault()

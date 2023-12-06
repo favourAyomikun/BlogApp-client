@@ -22,7 +22,7 @@ export const Navbar = () => {
         >
           F.A's Blog
         </Link>
-        <ul className="flex items-center font-semibold text-[17px] space-x-8 sm:hidden md:flex">
+        <ul className="hidden md:flex items-center font-semibold text-[17px] space-x-8">
           <li className="hover:underline underline-offset-4">
             <Link to={"/"}>Home</Link>
           </li>

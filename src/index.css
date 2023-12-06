@@ -14,5 +14,5 @@
 }
 
 .h2 {
-    @apply font-semibold text-base md:text-lg;
+    @apply font-semibold text-[15px] md:text-lg;
 }

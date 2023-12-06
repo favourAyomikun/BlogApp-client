@@ -36,7 +36,7 @@ export const BlogContent = ({ blogs }) => {
             <img
               src={post.image || `https://blog-app-server-mavt.onrender.com/${post.cover}`}
               alt="post-img"
-              className="h-52 md:h-72 w-[70%] md:w-full object-cover object-center rounded-md"
+              className="h-60 md:h-72 w-full object-cover object-center rounded-md"
             />
           </p>
           <p className="mt-3 text-sm">
@@ -50,8 +50,8 @@ export const BlogContent = ({ blogs }) => {
           </h2>
           <Link to={`/blogs/${post.id || post._id}`} className="pt-2 text-sm md:text-base">
             {post.content && post.content[0]}
-            <small className="text-sm font-semibold hover:underline underline-offset-2">
-              Read More....
+            <small className="text-sm font-semibold underline md:no-underline hover:underline underline-offset-2">
+              {''}Read More....
             </small>
           </Link>
         </div>
