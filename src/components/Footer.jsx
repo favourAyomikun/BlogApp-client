@@ -8,13 +8,13 @@ import { FaWhatsapp } from "react-icons/fa";
 export const Footer = () => {
   return (
     <footer className="bg-[#F9F9F9] w-full mt-40">
+      <Link
+        to={"/"}
+        className="flex justify-center py-2 text-xl md:text-3xl font-semibold hover:underline underline-offset-4 text-[#888888]"
+      >
+        F.A's Blog
+      </Link>
       <div className="flex flex-wrap items-center justify-evenly mb-3 pt-3">
-        <Link
-          to={"/"}
-          className="text-lg md:text-3xl font-semibold hover:underline underline-offset-4 text-[#888888]"
-        >
-          F.A's Blog
-        </Link>
         <div>
           <h2 className="h2 mb-1">Contact the Publisher</h2>
           <p className="text-sm md:text-base">favour@gmail.com</p>

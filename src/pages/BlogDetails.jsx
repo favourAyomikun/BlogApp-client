@@ -37,11 +37,11 @@ export const BlogDetails = ({ blogPosts }) => {
             </h2>
             <p className="text-sm">{format(new Date(), "dd-MM-yyyy")}</p>
             <p className="font-semibold text-xs">By @F.A</p>
-            <p className="w-[60%] my-8 mx-auto">
+            <p className="w-[80%] my-8 mx-auto">
               <img
                 src={selectedPost.image}
                 alt="post-img"
-                className="w-[100%] md:h-[60vh] object-cover object-center"
+                className="w-[100%] h-[60vh] object-cover object-center"
               />
             </p>
             {splitContent(selectedPost.content).map((paragraph, index) => (
@@ -65,16 +65,16 @@ export const BlogDetails = ({ blogPosts }) => {
             </p>
             <Link
               to={`/edit/${postInfo._id}`}
-              className="button w-[20%] md:w-[10%] mt-5 space-x-1 flex justify-center mx-auto items-center font-semibold"
+              className="button w-[30%] sm:w-[20%] md:w-[10%] mt-5 space-x-1 flex justify-center mx-auto items-center font-semibold"
             >
               <HiOutlinePencilSquare />
               <button className="text-sm md:text-base">Edit Post</button>
             </Link>
-            <p className="w-[60%] my-8 mx-auto">
+            <p className="w-[80%] my-8 mx-auto">
               <img
                 src={`https://blog-app-server-mavt.onrender.com/` + postInfo.cover}
                 alt="post-img"
-                className="w-[100%] md:h-[60vh] object-cover object-center"
+                className="w-[100%] h-[60vh] object-cover object-center"
               />
             </p>
             <p dangerouslySetInnerHTML={{ __html: postInfo.content }} className="tracking-normal md:tracking-wide mt-1 md:mt-2 text-left" />

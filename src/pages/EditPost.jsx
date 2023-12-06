@@ -14,7 +14,7 @@ export const EditPost = () => {
     const { token } = useAuth();
 
   useEffect(() => {
-    fetch(`https://blog-app-server-mavt.onrender.com/` + id)
+    fetch(`https://blog-app-server-mavt.onrender.com/post/` + id)
         .then(response => {
             response.json().then(postInfo => {
                 setTitle(postInfo.title)
@@ -48,7 +48,7 @@ export const EditPost = () => {
 }  
 
   return (
-    <main className="h-screen md:h-full">
+    <main className="h-screen">
       <Navbar />
       <form onSubmit={handleUpdatePost} className="flex flex-col items-center pt-24 pb-5 space-y-6">
         <input
