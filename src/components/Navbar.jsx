@@ -66,7 +66,7 @@ export const Navbar = () => {
             <FaBars onClick={toggleBar} className="cursor-pointer text-xl" />
           )}
           {isOpen && (
-            <div className="absolute bg-[#F9F9F9] border border-r-0 border-gray-400 w-[50%] h-[63vh] top-0 right-0">
+            <div className="absolute bg-[#F9F9F9] border border-r-0 border-gray-400 w-[50%] h-[20rem] top-0 right-0">
               <ul className="flex flex-col items-center space-y-10 font-semibold text-[17px] relative top-20">
                 <li className="hover:underline underline-offset-4 text-base">
                   <Link to={"/"}>Home</Link>
