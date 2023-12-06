@@ -48,7 +48,7 @@ export const EditPost = () => {
 }  
 
   return (
-    <main className="h-full">
+    <main className="h-screen md:h-full">
       <Navbar />
       <form onSubmit={handleUpdatePost} className="flex flex-col items-center pt-24 pb-5 space-y-6">
         <input
