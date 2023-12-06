@@ -12,7 +12,7 @@ export const BlogDetails = ({ blogPosts }) => {
 
   useEffect(() => {
     if (id.length > 5) {
-      fetch(`${process.env.REACT_APP_Local_Url}/post/${id}`).then((response) => {
+      fetch(`https://blog-app-server-mavt.onrender.com/post/${id}`).then((response) => {
         response.json().then((postInfo) => {
           setPostInfo(postInfo);
         });
@@ -72,7 +72,7 @@ export const BlogDetails = ({ blogPosts }) => {
             </Link>
             <p className="w-[60%] my-8 mx-auto">
               <img
-                src={`${process.env.REACT_APP_Local_Url}/` + postInfo.cover}
+                src={`https://blog-app-server-mavt.onrender.com/` + postInfo.cover}
                 alt="post-img"
                 className="w-[100%] md:h-[60vh] object-cover object-center"
               />

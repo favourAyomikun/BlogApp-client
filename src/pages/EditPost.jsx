@@ -14,7 +14,7 @@ export const EditPost = () => {
     const { token } = useAuth();
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_Local_Url}/` + id)
+    fetch(`https://blog-app-server-mavt.onrender.com/` + id)
         .then(response => {
             response.json().then(postInfo => {
                 setTitle(postInfo.title)
@@ -35,7 +35,7 @@ export const EditPost = () => {
         data.set("file", files?.[0]);
     }
 
-    const response = await fetch(`${process.env.REACT_APP_Local_Url}/post`, {
+    const response = await fetch(`https://blog-app-server-mavt.onrender.com/post`, {
         method: 'PUT',
         body: data,
         headers: {

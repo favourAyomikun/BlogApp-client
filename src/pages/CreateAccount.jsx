@@ -22,7 +22,7 @@ export const CreateAccount = () => {
     }
 
     try {
-      await axios.post(`${process.env.REACT_APP_Local_Url}/register`, {
+      await axios.post(`https://blog-app-server-mavt.onrender.com/register`, {
         username,
         password,
       });

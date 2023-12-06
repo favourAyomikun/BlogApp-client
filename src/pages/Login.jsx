@@ -17,7 +17,7 @@ export const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_Local_Url}/login`, {
+      const response = await axios.post(`https://blog-app-server-mavt.onrender.com/login`, {
         username,
         password,
       });

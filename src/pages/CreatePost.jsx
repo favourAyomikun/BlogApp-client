@@ -21,7 +21,7 @@ export const CreatePost = () => {
     data.set("content", content);
     data.set("file", files[0]);
 
-    const response = await fetch(`${process.env.REACT_APP_Local_Url}/post`, {
+    const response = await fetch(`https://blog-app-server-mavt.onrender.com/post`, {
       method: "POST",
       body: data,
       headers: {
