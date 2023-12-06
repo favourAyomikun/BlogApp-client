@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.button {
+    @apply px-4 py-[5px] bg-[#CCCCCC] hover:bg-[#AAAAAA] duration-300 rounded shadow;
+}
+
+.list {
+    @apply hover:underline underline-offset-4;
+}
+
+.h2 {
+    @apply font-semibold text-base md:text-lg;
+}
