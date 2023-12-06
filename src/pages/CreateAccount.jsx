@@ -22,7 +22,7 @@ export const CreateAccount = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/register", {
+      await axios.post(`${process.env.REACT_APP_Local_Url}/register`, {
         username,
         password,
       });

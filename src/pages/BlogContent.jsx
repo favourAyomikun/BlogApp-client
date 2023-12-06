@@ -8,7 +8,7 @@ export const BlogContent = ({ blogs }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/post");
+        const response = await fetch(`${process.env.REACT_APP_Local_Url}/post`);
         const posts = await response.json();
         setCreatedPosts(posts);
       } catch (error) {
@@ -34,7 +34,7 @@ export const BlogContent = ({ blogs }) => {
         <div key={post.id || post._id} className="w-full">
           <p>
             <img
-              src={post.image || `http://localhost:5000/${post.cover}`}
+              src={post.image || `${process.env.REACT_APP_Local_Url}/${post.cover}`}
               alt="post-img"
               className="h-52 md:h-72 w-[70%] md:w-full object-cover object-center rounded-md"
             />

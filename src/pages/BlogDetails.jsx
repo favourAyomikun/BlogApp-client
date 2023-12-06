@@ -12,7 +12,7 @@ export const BlogDetails = ({ blogPosts }) => {
 
   useEffect(() => {
     if (id.length > 5) {
-      fetch(`http://localhost:5000/post/${id}`).then((response) => {
+      fetch(`${process.env.REACT_APP_Local_Url}/post/${id}`).then((response) => {
         response.json().then((postInfo) => {
           setPostInfo(postInfo);
         });
@@ -72,7 +72,7 @@ export const BlogDetails = ({ blogPosts }) => {
             </Link>
             <p className="w-[60%] my-8 mx-auto">
               <img
-                src={"http://localhost:5000/" + postInfo.cover}
+                src={`${process.env.REACT_APP_Local_Url}/` + postInfo.cover}
                 alt="post-img"
                 className="w-[100%] md:h-[60vh] object-cover object-center"
               />

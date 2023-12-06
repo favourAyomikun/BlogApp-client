@@ -14,7 +14,7 @@ export const EditPost = () => {
     const { token } = useAuth();
 
   useEffect(() => {
-    fetch('http://localhost:5000/post/' + id)
+    fetch(`${process.env.REACT_APP_Local_Url}/` + id)
         .then(response => {
             response.json().then(postInfo => {
                 setTitle(postInfo.title)
@@ -35,7 +35,7 @@ export const EditPost = () => {
         data.set("file", files?.[0]);
     }
 
-    const response = await fetch('http://localhost:5000/post', {
+    const response = await fetch(`${process.env.REACT_APP_Local_Url}/post`, {
         method: 'PUT',
         body: data,
         headers: {
