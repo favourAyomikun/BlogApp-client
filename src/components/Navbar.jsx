@@ -16,11 +16,11 @@ export const Navbar = () => {
     <nav className="bg-[#F9F9F9] fixed top-0 container max-w-full shadow-md shadow-gray-400">
       {/* { Desktop Section } */}
       <div className="flex justify-around items-center h-[60px]">
-        <Link
-          to={"/"}
+         to={"/"}
           className="text-2xl md:text-3xl font-semibold hover:underline underline-offset-4 text-[#888888]"
         >
-          F.A's Blog
+          F.A's Blog   <Link
+      
         </Link>
         <ul className="hidden md:flex items-center font-semibold text-[17px] space-x-8">
           <li className="hover:underline underline-offset-4">
