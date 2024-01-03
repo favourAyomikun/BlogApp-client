@@ -16,11 +16,8 @@ export const Navbar = () => {
     <nav className="bg-[#F9F9F9] fixed top-0 container max-w-full shadow-md shadow-gray-400">
       {/* { Desktop Section } */}
       <div className="flex justify-around items-center h-[60px]">
-         to={"/"}
-          className="text-2xl md:text-3xl font-semibold hover:underline underline-offset-4 text-[#888888]"
-        >
-          F.A's Blog   <Link
-      
+        <Link to={'/'} className="text-2xl md:text-3xl font-semibold hover:underline underline-offset-4 text-[#888888]">
+          F.A's Blog
         </Link>
         <ul className="hidden md:flex items-center font-semibold text-[17px] space-x-8">
           <li className="hover:underline underline-offset-4">
@@ -57,11 +54,13 @@ export const Navbar = () => {
             </>
           )}
         </ul>
-
         {/* { Mobile Section} */}
         <div className="md:hidden">
           {isOpen ? (
-            <FaTimes onClick={toggleBar} className="cursor-pointer text-xl relative z-40 right-5 transition-all duration-300" />
+            <FaTimes
+              onClick={toggleBar}
+              className="cursor-pointer text-xl relative z-40 right-5 transition-all duration-300"
+            />
           ) : (
             <FaBars onClick={toggleBar} className="cursor-pointer text-xl" />
           )}
